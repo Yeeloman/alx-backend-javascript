@@ -1,9 +1,3 @@
-#!/usr/bin/node
-/**
- * A function that returns the task variable.
- *
- * @return {string} The task variable value.
- */
 export function taskFirst() {
   const task = 'I prefer const when I can.';
   return task;
