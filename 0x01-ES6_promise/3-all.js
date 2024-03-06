@@ -9,4 +9,3 @@ export default function handleProfileSignup() {
         console.log(`${value[0]} and ${value[1]}`)
     }).catch((err) => errconsole.log('Signup system offline'))
 }
-

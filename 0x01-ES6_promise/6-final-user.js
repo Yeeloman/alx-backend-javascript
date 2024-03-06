@@ -18,4 +18,3 @@ export default async function handleProfileSignup(firstName, lastName, filename)
     .then(results => results
         .map(({ status, value }) => ({ status, value })));
 }
-
