@@ -14,7 +14,7 @@ export class HolbertonClass {
 }
 
 export class StudentHolberton {
-  constructor(firstName, lastName) {
+  constructor(firstName, lastName, holbertonClass) {
     this._firstName = firstName;
     this._lastName = lastName;
     this._holbertonClass = holbertonClass;
@@ -29,7 +29,7 @@ export class StudentHolberton {
   }
 
   get fullStudentDescription() {
-    return `${self._firstName} ${self._lastName} - ${self._holbertonClass.year} - ${self._holbertonClass.location}`;
+    return `${this._firstName} ${this._lastName} - ${this._holbertonClass.year} - ${this._holbertonClass.location}`;
   }
 }
 
@@ -42,4 +42,4 @@ const student3 = new StudentHolberton('Albert', 'Clinton', class2019);
 const student4 = new StudentHolberton('Donald', 'Bush', class2019);
 const student5 = new StudentHolberton('Jason', 'Sandler', class2019);
 
-export const listOfStudents = [student1, student2, student3, student4, student5];
+export default [student1, student2, student3, student4, student5];
