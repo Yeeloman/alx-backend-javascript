@@ -8,6 +8,8 @@ export default class HolbertonCourse {
   set name(name) {
     if (name instanceof String) {
       this._name = name;
+    } else {
+        throw new TypeError('Name must be a string');
     }
   }
 
@@ -18,6 +20,8 @@ export default class HolbertonCourse {
   set length(length) {
     if (length instanceof Number) {
       this._length = length;
+    } else {
+        throw new TypeError('Length must be a number');
     }
   }
 
@@ -28,6 +32,8 @@ export default class HolbertonCourse {
   set students(students) {
     if (students instanceof Array) {
       this._students = students;
+    } else {
+        throw new TypeError('students must be an array');
     }
   }
 
