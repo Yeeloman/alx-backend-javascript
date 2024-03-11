@@ -1,17 +1,7 @@
-/* eslint-disable */
-class student {
-  constructor(id, firstName, location) {
-    this.id = id;
-    this.firstName = firstName;
-    this.location = location;
-  }
-}
+const getListStudents = () => [
+  { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
+  { id: 2, firstName: 'James', location: 'Columbia' },
+  { id: 5, firstName: 'Serena', location: 'San Francisco' },
+];
 
-export default function getListStudents() {
-  const students = [
-    new student(1, 'Guillaume', 'San Francisco'),
-    new student(2, 'James', 'Columbia'),
-    new student(5, 'Serena', 'New York'),
-  ];
-  return students;
-}
+export default getListStudents;
