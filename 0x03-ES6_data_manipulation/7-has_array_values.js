@@ -1,6 +1,6 @@
 const hasValuesFromArray = (set, arr) => {
-  for (let i = 0; i < arr.length; i + 1) {
-    if (!set.has(arr[i])) {
+  for (let val of arr) {
+    if (!set.has(val)) {
       return false;
     }
   }
