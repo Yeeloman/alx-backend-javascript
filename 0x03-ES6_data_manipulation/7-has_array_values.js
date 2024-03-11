@@ -1,5 +1,5 @@
 const hasValuesFromArray = (set, arr) => {
-  for (let val of arr) {
+  for (const val of arr) {
     if (!set.has(val)) {
       return false;
     }
