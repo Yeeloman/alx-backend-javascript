@@ -5,7 +5,7 @@ const cleanSet = (set, startString) => {
   const newArr = [];
   set.forEach((element) => {
     if (element === undefined) {
-      return '';
+      return;
     }
     if (element.startsWith(startString)) {
       const newElement = element.slice(startString.length);
