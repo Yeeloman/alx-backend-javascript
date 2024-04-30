@@ -1,13 +1,11 @@
-#!/usr/bin/node
-
 const fs = require('fs');
 
-function countStudents (pathFile) {
+function countStudents(fileName) {
   const students = {};
   const fields = {};
   let length = 0;
   try {
-    const fileContents = fs.readFileSync(pathFile, 'utf-8');
+    const fileContents = fs.readFileSync(fileName, 'utf-8');
     const lines = fileContents.toString().split('\n');
     for (let i = 0; i < lines.length; i += 1) {
       if (lines[i]) {
@@ -36,7 +34,5 @@ function countStudents (pathFile) {
     throw Error('Cannot load the database');
   }
 }
-
-module.exports = countStudents;
 
 module.exports = countStudents;
