@@ -1,13 +1,9 @@
-const getPaymentTokenFromAPI = require("./6-payment_token");
-const { describe, it } = require("mocha");
-const expect = require("chai").expect;
+function getPaymentTokenFromAPI(success) {
+  if (success) {
+    return new Promise((resolve) => {
+      resolve({ data: 'Successful response from the API' });
+    });
+  }
+}
 
-describe("getPaymentTokenFromAPI", function() {
-  it("Async testing", function(done) {
-    getPaymentTokenFromAPI(true)
-      .then((data) => {
-        expect(data).to.have.property('data');
-        done();
-      });
-  });
-});
+module.exports = getPaymentTokenFromAPI;
