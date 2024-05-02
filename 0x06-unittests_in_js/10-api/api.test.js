@@ -75,3 +75,4 @@ describe('Available_payments page', function() {
     });
   });
 });
+
