@@ -1,4 +1,4 @@
-function task_printer (num) {
+function task_printer(num) {
   console.log(`############# ${num} #############`);
 }
 
@@ -16,15 +16,14 @@ countStudents('database.csv');
 
 task_printer(3);
 
-// const countStudents = require('./3-read_file_async');
-//
-// countStudents("database.csv")
-//     .then(() => {
-//         console.log("Done!");
-//     })
-//         .catch((error) => {
-//         console.log(error);
-//     });
-// console.log("After!");
+const countStudents = require('./3-read_file_async');
 
-task_printer(5);
+countStudents("database.csv")
+  .then(() => {
+    console.log("Done!");
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+console.log("After!");
+
